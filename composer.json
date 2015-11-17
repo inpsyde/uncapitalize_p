@@ -1,0 +1,20 @@
+{
+  "name": "inpsyde/uncapitalize_p",
+  "description": "WordPress plugin that removes the capital_P_dangit filters from content.",
+  "keywords": [
+    "WordPress",
+    "Capital P",
+    "Typo"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "David Naber",
+      "email": "d.naber@inpsyde.com",
+      "role": "Developer"
+    }
+  ],
+  "requires": {
+    "php": ">=5.3.0"
+  }
+}
