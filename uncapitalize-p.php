@@ -11,7 +11,7 @@
 
 namespace UncapitalizeP;
 
-add_action( 'wp_loaded', __NAMESPACE__ . '\clean_up', 11 );
+add_action( 'plugins_loaded', __NAMESPACE__ . '\clean_up', 11 );
 
 /**
  * Remove filter 'capital_P_dangit' from the_content,
