@@ -1,28 +1,29 @@
-<?php # -*- coding: utf-8 -*-
+<?php
+declare(strict_types=1);
 
 /**
  * Plugin Name: Uncapitalize P
  * Description: Gives you the freedom to write «WordPress» as <em>you</em> want to.
  * Author:      Inpsyde GmbH
  * Author URI:  http://inpsyde.com
- * Version:     1.0.0
+ * Version:     dev-master
  * Licence:     MIT
  */
 
-namespace UncapitalizeP;
+namespace Inpsyde\UncapitalizeP;
 
-add_action( 'plugins_loaded', __NAMESPACE__ . '\clean_up', 11 );
-
-/**
- * Remove filter 'capital_P_dangit' from the_content,
- * the_title, wp_title and comment_content
- *
- * @wp-hook plugins_loaded
- */
-function clean_up() {
-
-	foreach ( array( 'the_content', 'the_title', 'wp_title' ) as $filter )
-		remove_filter( $filter, 'capital_P_dangit', 11 );
-
-	remove_filter( 'comment_text', 'capital_P_dangit', 31 );
-}
+add_action(
+    'plugins_loaded',
+    function () {
+        $filters = [
+            'wp_title' => 11,
+            'the_title' => 11,
+            'the_content' => 11,
+            'comment_text' => 31,
+        ];
+        foreach ($filters as $filter => $priority) {
+            remove_filter($filter, 'capital_P_dangit', $priority);
+        }
+    },
+    11
+);
