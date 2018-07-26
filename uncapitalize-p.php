@@ -6,7 +6,7 @@ declare(strict_types=1);
  * Description: Gives you the freedom to write «WordPress» as <em>you</em> want to.
  * Author:      Inpsyde GmbH
  * Author URI:  http://inpsyde.com
- * Version:     dev-master
+ * Version:     2.0.0
  * Licence:     MIT
  */
 
