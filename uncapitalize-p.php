@@ -7,7 +7,7 @@ declare(strict_types=1);
  * Author:      Inpsyde GmbH
  * Author URI:  https://inpsyde.com
  * Version:     2.0.1
- * Licence:     MIT
+ * Licence:     GPLv2+
  */
 
 namespace Inpsyde\UncapitalizeP;
