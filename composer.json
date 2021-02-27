@@ -5,9 +5,11 @@
     "keywords": [
         "WordPress",
         "Capital P",
+        "Dangit Capital P",
+        "capital_P_dangit",
         "Typo"
     ],
-    "license": "MIT",
+    "license": "gpl-2.0-or-later",
     "authors": [
         {
             "name": "David Naber",
