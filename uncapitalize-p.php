@@ -21,6 +21,7 @@ add_action(
             'the_content' => 11,
             'comment_text' => 31,
             'widget_text_content' => 11,
+            'document_title' => 11,
         ];
         foreach ($filters as $filter => $priority) {
             remove_filter($filter, 'capital_P_dangit', $priority);
